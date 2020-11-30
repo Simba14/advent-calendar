@@ -10,8 +10,6 @@ const getContent = () => {
 
   const today = new Date()
   const day = today.getDate()
-  const month = today.getMonth()
-  console.log({ startDate, christmas, today }, today < startDate)
 
   if (today < startDate) {
     return <Countdown today={today} start={startDate} />

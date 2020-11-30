@@ -1,14 +1,10 @@
-import React, { useRef, useEffect } from "react"
+import React, { useRef } from "react"
 
 import styles from "./typer.module.scss"
 
 const Typer = ({ content, className, onEnd }) => {
   const cursorRef = useRef()
   const textRef = useRef()
-  // useEffect(() => {
-  //   onEnd()
-  // }, [])
-  // return null
 
   // Current sentence being processed
   let part = 0
@@ -46,7 +42,7 @@ const Typer = ({ content, className, onEnd }) => {
     // If sentence has been deleted then start to display the next sentence
     if (part === content.length - 1 && text === "") {
       clearInterval(intervalVal)
-      // onEnd()
+      onEnd()
     }
 
     if (text === "" && part !== content.length - 1) {

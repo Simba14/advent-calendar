@@ -12,6 +12,14 @@ const Title = ({ onMount }) => {
       translateY: [-200, 0],
       complete: onMount,
     })
+    return () => {
+      anime({
+        targets: "#merry",
+        opacity: 0,
+        duration: 1000,
+        translateY: -200,
+      })
+    }
   }, [])
 
   return (

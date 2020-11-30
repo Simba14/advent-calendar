@@ -27,12 +27,22 @@
     max-width: 170px;
     padding-top: 10px;
 
-    &.active {
-      cursor: pointer;
-    }
-
     &:not(:nth-child(6n)) {
       margin-right: 16px;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 24px;
+      height: 14vw;
+      width: calc(23.5% - 16px);
+
+      &:not(:nth-child(4n)) {
+        margin-right: 16px;
+      }
+    }
+
+    &.active {
+      cursor: pointer;
     }
   }
 

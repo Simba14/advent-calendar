@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react"
+import React, { useRef, useState } from "react"
 import anime from "animejs/lib/anime.es.js"
 import Title from "../components/title"
 import Typer from "../components/typer"
@@ -12,7 +12,7 @@ const data = [
   { number: 5 },
   { number: 19 },
   { number: 11 },
-  { number: 30 },
+  { number: 12 },
   { number: 13 },
   { number: 7 },
   { number: 14 },
@@ -33,7 +33,7 @@ const data = [
 ]
 
 const presents = {
-  1: "",
+  1: "Your present is to be delivered by a white in fake Babour",
   2: "",
   3: "",
   4: "",
@@ -56,8 +56,8 @@ const presents = {
   21: "",
   22: "",
   23: "",
-  29: "Have you ever felt like a plastic bag",
-  30: "Chicken on top",
+  24: "Have you ever felt like a plastic bag",
+  25: "Chicken on top",
 }
 
 const PAST_DOOR = "past-door"
@@ -67,9 +67,11 @@ const FUTURE_DOOR = "future-door"
 const Calendar = ({ day }) => {
   const activeRef = useRef()
   const [displayTyper, setDisplayTyper] = useState(false)
+  const [displayTitle, setDisplayTitle] = useState(true)
 
   const startAnimation = () => {
     setDisplayTyper(false)
+    setDisplayTitle(false)
 
     const tl = anime.timeline({
       easing: "easeOutExpo",
@@ -103,8 +105,6 @@ const Calendar = ({ day }) => {
         top: `${activeRef.current.getBoundingClientRect().top - 32}px`,
         left: `${activeRef.current.getBoundingClientRect().left - 32}px`,
         complete: () => {
-          const act = activeRef.current.getBoundingClientRect()
-
           activeRef.current.style.setProperty("position", "absolute")
           activeRef.current.style.setProperty("margin", "auto")
         },
@@ -123,8 +123,6 @@ const Calendar = ({ day }) => {
         translateY: "0%",
         translateX: "0%",
         complete: () => {
-          const act = activeRef.current.getBoundingClientRect()
-
           activeRef.current.style.setProperty("top", "unset")
           activeRef.current.style.setProperty("left", "unset")
         },
@@ -148,10 +146,21 @@ const Calendar = ({ day }) => {
 
   return (
     <div>
-      <Title onMount={() => setDisplayTyper(true)} />
+      {displayTitle && <Title onMount={() => setDisplayTyper(true)} />}
       {displayTyper && (
         <Typer
-          content={[`Damn, you fine! you single?`, "Peak for man"]}
+          content={[
+            `Cody, my love for`,
+            "Shit! I mean Hannah",
+            "Hannah, my love for you",
+            "is...hmmm",
+            "I guess",
+            "it's real big.",
+            "Anyway, All I want",
+            "for Christmas is you",
+            "...to stop stalking me",
+            "Seriously. Please stop.",
+          ]}
           onEnd={startAnimation}
         />
       )}

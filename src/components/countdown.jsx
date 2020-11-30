@@ -11,7 +11,7 @@ const Countdown = ({ today, start }) => {
   useEffect(() => {
     const timer = setInterval(() => setTimeLeft(countdown(start).toString()))
     return () => clearInterval(timer)
-  }, [])
+  }, [start])
 
   const onDisplayTimer = () => {
     setDisplayTimer(true)
@@ -34,7 +34,6 @@ const Countdown = ({ today, start }) => {
 
   const str1 = timeLeft.split("and ")
   const seconds = str1[1].split(" seconds")[0]
-  console.log({ str1, seconds })
 
   return (
     <>
