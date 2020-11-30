@@ -4,6 +4,9 @@
   "description": "A simplified bare-bones starter for Gatsby",
   "version": "0.1.0",
   "license": "0BSD",
+  "engines": {
+    "node": "13.13.0"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -14,7 +17,14 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "animejs": "^3.2.1",
+    "countdown": "^2.6.0",
     "gatsby": "^2.24.91",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
+    "gatsby-plugin-sass": "^2.3.22",
+    "moment": "^2.29.1",
+    "moment-countdown": "^0.0.3",
+    "node-sass": "4.14.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },

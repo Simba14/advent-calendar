@@ -1,0 +1,37 @@
+path {
+  fill: transparent;
+}
+
+text {
+  font-family: "Henny Penny", cursive;
+  font-size: 56px;
+  fill: #ff9800;
+  opacity: 0;
+}
+
+.titleSvg {
+  position: relative;
+  z-index: 10000000;
+}
+
+.timeLeft {
+  font-family: "Xanh Mono", monospace;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+
+  span {
+    text-decoration: line-through;
+  }
+
+  .name {
+    margin-bottom: 16px;
+  }
+
+  .timer {
+    color: red;
+  }
+}
