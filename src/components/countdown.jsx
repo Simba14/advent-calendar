@@ -33,7 +33,10 @@ const Countdown = ({ today, start }) => {
   }
 
   const str1 = timeLeft.split("and ")
-  const seconds = str1[1].split(" seconds")[0]
+  const seconds =
+    str1[1] &&
+    ((str1[1].split(" seconds")[1] && str1[1].split(" seconds")[0]) ||
+      (str1[1].split(" second")[1] && str1[1].split(" second")[0]))
 
   return (
     <>
@@ -45,8 +48,12 @@ const Countdown = ({ today, start }) => {
           </div>
           <div>Your Christmas Experience begins in:</div>
           <div id="time" className={styles.timer}>
-            {str1[0]} and <span className={styles.seconds}>{seconds}</span>{" "}
-            seconds
+            {str1[0]}
+            {seconds && (
+              <span>
+                and <span className={styles.seconds}>{seconds}</span> seconds
+              </span>
+            )}
           </div>
         </div>
       )}
