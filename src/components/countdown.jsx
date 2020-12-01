@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import countdown from "countdown"
 import anime from "animejs/lib/anime.es.js"
-import styles from "./title.module.scss"
+import styles from "./countdown.module.scss"
 import Title from "../components/title"
 
 const Countdown = ({ today, start }) => {

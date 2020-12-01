@@ -33,7 +33,7 @@ const data = [
 ]
 
 const presents = {
-  1: "Your present is to be delivered by a white in fake Babour",
+  1: "Your present is to be delivered by a white in fake Barbour",
   2: "",
   3: "",
   4: "",
@@ -68,6 +68,7 @@ const Calendar = ({ day }) => {
   const activeRef = useRef()
   const [displayTyper, setDisplayTyper] = useState(false)
   const [displayTitle, setDisplayTitle] = useState(true)
+  const [doorOpened, setDoorOpened] = useState(false)
 
   const startAnimation = () => {
     setDisplayTyper(false)
@@ -92,7 +93,7 @@ const Calendar = ({ day }) => {
   }
 
   const handleOnClick = isActive => {
-    if (isActive) {
+    if (isActive && !doorOpened) {
       const timeline = anime.timeline({ easing: "easeOutExpo" })
 
       timeline.add({
@@ -107,6 +108,7 @@ const Calendar = ({ day }) => {
         complete: () => {
           activeRef.current.style.setProperty("position", "absolute")
           activeRef.current.style.setProperty("margin", "auto")
+          activeRef.current.style.setProperty("cursor", "not-allowed")
         },
         duration: 1,
       })
@@ -140,6 +142,9 @@ const Calendar = ({ day }) => {
         translateX: [300, 0],
         translateY: [400, 0],
         duration: 1500,
+        complete: () => {
+          setDoorOpened(true)
+        },
       })
     }
   }
@@ -168,8 +173,9 @@ const Calendar = ({ day }) => {
       <div id="calendar" className={styles.calendar}>
         {data.map(door => {
           const isActiveDay = door.number === day
-          const isPastDay = day > door.number ? PAST_DOOR : FUTURE_DOOR
-          const doorId = day === door.number ? ACTIVE_DOOR : isPastDay
+          const isPastDay = day >= door.number ? PAST_DOOR : FUTURE_DOOR
+          const doorId =
+            day === door.number && !doorOpened ? ACTIVE_DOOR : isPastDay
           return (
             <div
               key={`door ${door.number}`}

@@ -43,6 +43,7 @@
 
     &.active {
       cursor: pointer;
+      z-index: 15;
     }
   }
 
@@ -52,6 +53,7 @@
     opacity: 0;
     position: fixed;
     color: orange;
+    z-index: 20;
   }
 }
 

@@ -2,7 +2,7 @@ import React, { useRef } from "react"
 
 import styles from "./typer.module.scss"
 
-const Typer = ({ content, className, onEnd }) => {
+const Typer = ({ content, onEnd }) => {
   const cursorRef = useRef()
   const textRef = useRef()
 
@@ -62,7 +62,7 @@ const Typer = ({ content, className, onEnd }) => {
   intervalVal = setInterval(Type, 100)
 
   return (
-    <div className={`${styles.container} ${className}`}>
+    <div className={styles.container}>
       <div className={styles.text} id={"text"} ref={textRef}></div>
       <div className={styles.cursor} id={"cursor"} ref={cursorRef}></div>
     </div>
