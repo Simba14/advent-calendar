@@ -34,11 +34,11 @@ const data = [
 
 const presents = {
   1: "Your present is to be delivered by a white in fake Barbour",
-  2: "",
-  3: "",
-  4: "",
-  5: "",
-  6: "",
+  2: "Get it before the Moths do",
+  3: "If you were to be bent over",
+  4: "In the Servants' quarters ",
+  5: "Just seeking some phototropism",
+  6: "On my way to Narnia",
   7: "",
   8: "",
   9: "",
@@ -155,16 +155,10 @@ const Calendar = ({ day }) => {
       {displayTyper && (
         <Typer
           content={[
-            `Cody, my love for`,
-            "Shit! I mean Hannah",
-            "Hannah, my love for you",
-            "is...hmmm",
-            "I guess",
-            "it's real big.",
-            "Anyway, All I want",
-            "for Christmas is you",
-            "...to stop stalking me",
-            "Seriously. Please stop.",
+            `Cody, my love`,
+            "It has now been",
+            "three nights without you.",
+            "Please come home",
           ]}
           onEnd={startAnimation}
         />
