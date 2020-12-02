@@ -81,7 +81,7 @@ const Calendar = ({ day }) => {
     tl.add({
       targets: "#calendar",
       opacity: 1,
-      duration: 2000,
+      duration: 1200,
     })
     tl.add({
       targets: `#${PAST_DOOR}`,
@@ -168,11 +168,11 @@ const Calendar = ({ day }) => {
         {data.map(door => {
           const isActiveDay = door.number === day
           const isPastDay = day >= door.number ? PAST_DOOR : FUTURE_DOOR
-          const doorId =
-            day === door.number && !doorOpened ? ACTIVE_DOOR : isPastDay
+          const doorId = isActiveDay && !doorOpened ? ACTIVE_DOOR : isPastDay
+          console.log({ doorId, number: door.number })
           return (
             <div
-              key={`door ${door.number}`}
+              key={`door ${door.number}, ${day}`}
               id={doorId}
               ref={isActiveDay ? activeRef : null}
               className={`${styles.door} ${isActiveDay ? styles.active : ""}`}
