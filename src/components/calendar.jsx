@@ -69,6 +69,7 @@ const Calendar = ({ day }) => {
   const [displayTyper, setDisplayTyper] = useState(false)
   const [displayTitle, setDisplayTitle] = useState(true)
   const [doorOpened, setDoorOpened] = useState(false)
+  const [displayPresent, setDisplayPresent] = useState(false)
 
   const startAnimation = () => {
     setDisplayTyper(false)
@@ -90,6 +91,29 @@ const Calendar = ({ day }) => {
       color: "#e5e3dd",
       duration: 1000,
     })
+  }
+
+  const presentAnimation = () => {
+    const timeline = anime.timeline({ easing: "easeOutExpo" })
+
+    timeline.add({
+      targets: "#present-text",
+      opacity: 1,
+      translateX: [300, 0],
+      translateY: [400, 0],
+      duration: 1500,
+      complete: () => {
+        setDoorOpened(true)
+      },
+    })
+    timeline.add(
+      {
+        targets: `#${ACTIVE_DOOR}`,
+        scale: "1",
+        duration: 1500,
+      },
+      "-=1500"
+    )
   }
 
   const handleOnClick = isActive => {
@@ -135,15 +159,9 @@ const Calendar = ({ day }) => {
         scale: "20",
         color: "#0f6235",
         duration: 1500,
-      })
-      timeline.add({
-        targets: "#present-text",
-        opacity: 1,
-        translateX: [300, 0],
-        translateY: [400, 0],
-        duration: 1500,
         complete: () => {
-          setDoorOpened(true)
+          setDisplayPresent(true)
+          presentAnimation()
         },
       })
     }
@@ -169,7 +187,7 @@ const Calendar = ({ day }) => {
           const isActiveDay = door.number === day
           const isPastDay = day >= door.number ? PAST_DOOR : FUTURE_DOOR
           const doorId = isActiveDay && !doorOpened ? ACTIVE_DOOR : isPastDay
-          console.log({ doorId, number: door.number })
+
           return (
             <div
               key={`door ${door.number}, ${day}`}
@@ -182,9 +200,13 @@ const Calendar = ({ day }) => {
             </div>
           )
         })}
-        <div id="present-text" className={styles.present}>
-          {presents[day]}
-        </div>
+        {displayPresent && (
+          <div className={styles.present}>
+            <div className={styles.presentText} id="present-text">
+              {presents[day]}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   )

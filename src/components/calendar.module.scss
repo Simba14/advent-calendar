@@ -50,10 +50,19 @@
   .present {
     font-family: "Henny Penny", cursive;
     font-size: 38px;
-    opacity: 0;
     position: fixed;
     color: orange;
     z-index: 20;
+    background: #0f6235;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .presentText {
+      opacity: 0;
+    }
   }
 }
 
