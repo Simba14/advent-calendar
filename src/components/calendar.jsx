@@ -173,10 +173,10 @@ const Calendar = ({ day }) => {
       {displayTyper && (
         <Typer
           content={[
-            `Cody, my love`,
-            "It has now been",
-            "three nights without you.",
-            "Please come home",
+            `Ah, it is you again`,
+            "You don't look like",
+            "Cody",
+            "Give her back!",
           ]}
           onEnd={startAnimation}
         />
