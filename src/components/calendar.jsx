@@ -168,12 +168,12 @@ const Calendar = ({ day }) => {
   }
 
   return (
-    <div>
+    <div key={day}>
       {displayTitle && <Title onMount={() => setDisplayTyper(true)} />}
       {displayTyper && (
         <Typer
           content={[
-            `Ah, it is you again`,
+            "Ah, it is you again",
             "You don't look like",
             "Cody",
             "Give her back!",
