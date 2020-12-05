@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react"
 import anime from "animejs/lib/anime.es.js"
 import Title from "../components/title"
 import Typer from "../components/typer"
+import LeftArrow from "../assets/left-arrow.svg"
 import styles from "./calendar.module.scss"
 
 const data = [
@@ -12,9 +13,9 @@ const data = [
   { number: 5 },
   { number: 19 },
   { number: 11 },
-  { number: 12 },
   { number: 13 },
   { number: 7 },
+  { number: 12 },
   { number: 14 },
   { number: 8 },
   { number: 24 },
@@ -33,31 +34,231 @@ const data = [
 ]
 
 const presents = {
-  1: "Your present is to be delivered by a white in fake Barbour",
-  2: "Get it before the Moths do",
-  3: "If you were to be bent over",
-  4: "In the Servants' quarters ",
-  5: "Just seeking some phototropism",
-  6: "On my way to Narnia",
-  7: "",
-  8: "",
-  9: "",
-  10: "",
-  11: "",
-  12: "",
-  13: "",
-  14: "",
-  15: "",
-  16: "",
-  17: "",
-  18: "",
-  19: "",
-  20: "",
-  21: "",
-  22: "",
-  23: "",
-  24: "Have you ever felt like a plastic bag",
-  25: "Chicken on top",
+  1: {
+    present: "Your present is to be delivered by a white in fake Barbour",
+    animation: {
+      translateY: "-50%",
+      translateX: "-50%",
+      top: "50%",
+      left: "50%",
+    },
+  },
+  2: {
+    present: "Get it before the Moths do",
+    animation: {
+      translateY: ["-75%", "-50%"],
+      translateX: ["-50%"],
+      top: ["75%", "50%"],
+      left: "50%",
+    },
+  },
+  3: {
+    present: "If you were to be bent over",
+    animation: {
+      translateY: "-50%",
+      translateX: "-50%",
+      top: "50%",
+      left: "50%",
+    },
+  },
+  4: {
+    present: "In the Servants' quarters ",
+    animation: {
+      translateY: ["-75%", "-50%"],
+      translateX: ["-50%"],
+      top: ["75%", "50%"],
+      left: "50%",
+    },
+  },
+  5: {
+    present: "Just seeking some phototropism",
+    animation: {
+      translateY: "-50%",
+      translateX: "-50%",
+      top: "50%",
+      left: "50%",
+    },
+  },
+  6: {
+    present: "On my way to Narnia",
+    animation: {
+      translateY: ["-75%", "-50%"],
+      translateX: ["-50%"],
+      top: ["75%", "50%"],
+      left: "50%",
+    },
+  },
+  7: {
+    present: "",
+    animation: {
+      translateY: ["-25%", "-50%"],
+      translateX: ["-50%"],
+      top: ["25%", "50%"],
+      left: "50%",
+    },
+  },
+  8: {
+    present: "",
+    animation: {
+      translateY: ["-25%", "-50%"],
+      translateX: ["-50%"],
+      top: ["25%", "50%"],
+      left: "50%",
+    },
+  },
+  9: {
+    present: "",
+    animation: {
+      translateY: ["-50%", "-50%"],
+      translateX: ["-50%"],
+      top: ["50%", "50%"],
+      left: "50%",
+    },
+  },
+  10: {
+    present: "",
+    animation: {
+      translateY: ["-50%", "-50%"],
+      translateX: ["-50%"],
+      top: ["50%", "50%"],
+      left: "50%",
+    },
+  },
+  11: {
+    present: "",
+    animation: {
+      translateY: ["-25%", "-50%"],
+      translateX: ["-50%"],
+      top: ["25%", "50%"],
+      left: "50%",
+    },
+  },
+  12: {
+    present: "",
+    animation: {
+      translateY: ["-25%", "-50%"],
+      translateX: ["-50%"],
+      top: ["25%", "50%"],
+      left: "50%",
+    },
+  },
+  13: {
+    present: "",
+    animation: {
+      translateY: ["-25%", "-50%"],
+      translateX: ["-50%"],
+      top: ["25%", "50%"],
+      left: "50%",
+    },
+  },
+  14: {
+    present: "",
+    animation: {
+      translateY: ["-25%", "-50%"],
+      translateX: ["-50%"],
+      top: ["25%", "50%"],
+      left: "50%",
+    },
+  },
+  15: {
+    present: "",
+    animation: {
+      translateY: ["-50%", "-50%"],
+      translateX: ["-50%"],
+      top: ["50%", "50%"],
+      left: "50%",
+    },
+  },
+  16: {
+    present: "",
+    animation: {
+      translateY: "-50%",
+      translateX: "-50%",
+      top: "50%",
+      left: "50%",
+    },
+  },
+  17: {
+    present: "",
+    animation: {
+      translateY: ["-75%", "-50%"],
+      translateX: ["-50%"],
+      top: ["75%", "50%"],
+      left: "50%",
+    },
+  },
+  18: {
+    present: "",
+    animation: {
+      translateY: ["-75%", "-50%"],
+      translateX: ["-50%"],
+      top: ["75%", "50%"],
+      left: "50%",
+    },
+  },
+  19: {
+    present: "",
+    animation: {
+      translateY: "-50%",
+      translateX: "-50%",
+      top: "50%",
+      left: "50%",
+    },
+  },
+  20: {
+    present: "",
+    animation: {
+      translateY: ["-75%", "-50%"],
+      translateX: ["-50%"],
+      top: ["75%", "50%"],
+      left: "50%",
+    },
+  },
+  21: {
+    present: "",
+    animation: {
+      translateY: ["-50%", "-50%"],
+      translateX: ["-50%"],
+      top: ["50%", "50%"],
+      left: "50%",
+    },
+  },
+  22: {
+    present: "",
+    animation: {
+      translateY: ["-50%", "-50%"],
+      translateX: ["-50%"],
+      top: ["50%", "50%"],
+      left: "50%",
+    },
+  },
+  23: {
+    present: "",
+    animation: {
+      translateY: "-50%",
+      translateX: "-50%",
+      top: "50%",
+      left: "50%",
+    },
+  },
+  24: {
+    present: "Have you ever felt like a plastic bag",
+    animation: {
+      translateY: ["-50%", "-50%"],
+      translateX: ["-50%"],
+      top: ["50%", "50%"],
+      left: "50%",
+    },
+  },
+  25: {
+    present: "Chicken on top",
+    animation: {
+      translateY: ["-100%", "-50%"],
+      translateX: ["-50%", "-50%"],
+      top: ["100%", "50%"],
+      left: ["50%", "50%"],
+    },
+  },
 }
 
 const PAST_DOOR = "past-door"
@@ -70,6 +271,9 @@ const Calendar = ({ day }) => {
   const [displayTitle, setDisplayTitle] = useState(true)
   const [doorOpened, setDoorOpened] = useState(false)
   const [displayPresent, setDisplayPresent] = useState(false)
+  const [displayCalendar, setDisplayCalendar] = useState(true)
+  const [animating, setAnimating] = useState(false)
+  let currentTarget
 
   const startAnimation = () => {
     setDisplayTyper(false)
@@ -102,69 +306,82 @@ const Calendar = ({ day }) => {
       translateX: [300, 0],
       translateY: [400, 0],
       duration: 1500,
-      complete: () => {
-        setDoorOpened(true)
-      },
     })
     timeline.add(
       {
-        targets: `#${ACTIVE_DOOR}`,
-        scale: "1",
+        targets: currentTarget,
+        opacity: 0,
+        duration: 2500,
+      },
+      "-=1500"
+    )
+    timeline.add({
+      targets: currentTarget,
+      scale: "1",
+      duration: 1,
+      complete: () => {
+        setDoorOpened(true)
+        setDisplayCalendar(false)
+      },
+    })
+    timeline.add({
+      targets: "#back-btn",
+      opacity: 1,
+      duration: 1000,
+    })
+  }
+
+  const handleOnClick = (e, doorClass, door) => {
+    currentTarget = e.currentTarget
+    const timeline = anime.timeline({ easing: "easeOutExpo" })
+    setAnimating(true)
+
+    timeline.add({
+      targets: [`#${PAST_DOOR}`, `#${FUTURE_DOOR}`, `#${ACTIVE_DOOR}`],
+      opacity: 0,
+      duration: 1500,
+    })
+    timeline.add(
+      {
+        targets: e.currentTarget,
+        opacity: 1,
+        borderColor: "#a58c24",
+        backgroundColor: "#0f6235",
+        color: "#fff",
         duration: 1500,
       },
       "-=1500"
     )
+    timeline.add({
+      targets: e.currentTarget,
+      duration: 3000,
+      ...presents[door].animation,
+    })
+    timeline.add({
+      targets: e.currentTarget,
+      scale: "20",
+      color: "#0f6235",
+      duration: 1500,
+      complete: () => {
+        setDisplayPresent(door)
+        presentAnimation()
+      },
+    })
   }
 
-  const handleOnClick = isActive => {
-    if (isActive && !doorOpened) {
-      const timeline = anime.timeline({ easing: "easeOutExpo" })
-
-      timeline.add({
-        targets: [`#${PAST_DOOR}`, `#${FUTURE_DOOR}`],
-        opacity: 0,
-        duration: 1500,
-      })
-      timeline.add({
-        targets: `#${ACTIVE_DOOR}`,
-        top: `${activeRef.current.getBoundingClientRect().top - 32}px`,
-        left: `${activeRef.current.getBoundingClientRect().left - 32}px`,
-        complete: () => {
-          activeRef.current.style.setProperty("position", "absolute")
-          activeRef.current.style.setProperty("margin", "auto")
-          activeRef.current.style.setProperty("cursor", "not-allowed")
-        },
-        duration: 1,
-      })
-      timeline.add({
-        targets: `#${ACTIVE_DOOR}`,
-        translateY: "-50%",
-        translateX: "-50%",
-        top: "50%",
-        left: "50%",
-        duration: 1000,
-      })
-      timeline.add({
-        targets: `#${ACTIVE_DOOR}`,
-        translateY: "0%",
-        translateX: "0%",
-        complete: () => {
-          activeRef.current.style.setProperty("top", "unset")
-          activeRef.current.style.setProperty("left", "unset")
-        },
-        duration: 1,
-      })
-      timeline.add({
-        targets: `#${ACTIVE_DOOR}`,
-        scale: "20",
-        color: "#0f6235",
-        duration: 1500,
-        complete: () => {
-          setDisplayPresent(true)
-          presentAnimation()
-        },
-      })
-    }
+  const onBack = () => {
+    const timeline = anime.timeline({ easing: "easeOutExpo" })
+    setDisplayCalendar(true)
+    timeline.add({
+      targets: "#present",
+      opacity: 0,
+      duration: 1500,
+      complete: () => {
+        setAnimating(false)
+        setDisplayPresent(false)
+        startAnimation()
+      },
+    })
   }
 
   return (
@@ -173,41 +390,53 @@ const Calendar = ({ day }) => {
       {displayTyper && (
         <Typer
           content={[
-            "Ah, it is you again",
-            "You don't look like",
-            "Cody",
-            "Give her back!",
+            "Damn you fine",
+            "Oh not you",
+            "Who that behind you?",
+            "She a friend?",
           ]}
           onEnd={startAnimation}
         />
       )}
+      {displayCalendar && (
+        <div id="calendar" className={styles.calendar}>
+          {data.map(door => {
+            const isActiveDay = door.number === day
+            const notFuture = day >= door.number
+            const isPastDay = notFuture ? PAST_DOOR : FUTURE_DOOR
+            const doorId = isActiveDay && !doorOpened ? ACTIVE_DOOR : isPastDay
+            const doorNumber = `door${door.number}`
 
-      <div id="calendar" className={styles.calendar}>
-        {data.map(door => {
-          const isActiveDay = door.number === day
-          const isPastDay = day >= door.number ? PAST_DOOR : FUTURE_DOOR
-          const doorId = isActiveDay && !doorOpened ? ACTIVE_DOOR : isPastDay
-
-          return (
-            <div
-              key={`door ${door.number}, ${day}`}
-              id={doorId}
-              ref={isActiveDay ? activeRef : null}
-              className={`${styles.door} ${isActiveDay ? styles.active : ""}`}
-              onClick={() => handleOnClick(isActiveDay)}
-            >
-              {door.number}
-            </div>
-          )
-        })}
-        {displayPresent && (
-          <div className={styles.present}>
-            <div className={styles.presentText} id="present-text">
-              {presents[day]}
-            </div>
+            return (
+              <div
+                key={`${doorNumber}, ${day}`}
+                id={doorId}
+                ref={isActiveDay ? activeRef : null}
+                className={`${styles.door} ${styles[doorNumber]} ${
+                  notFuture ? styles.active : ""
+                } ${doorNumber}`}
+                onClick={e =>
+                  notFuture &&
+                  !animating &&
+                  handleOnClick(e, doorNumber, door.number)
+                }
+              >
+                {door.number}
+              </div>
+            )
+          })}
+        </div>
+      )}
+      {displayPresent && (
+        <div className={styles.present} id="present">
+          <div className={styles.presentText} id="present-text">
+            {presents[displayPresent].present}
           </div>
-        )}
-      </div>
+          <button className={styles.backBtn} id="back-btn" onClick={onBack}>
+            <img src={LeftArrow} />
+          </button>
+        </div>
+      )}
     </div>
   )
 }

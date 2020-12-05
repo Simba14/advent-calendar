@@ -1,14 +1,13 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import styles from "./index.module.scss"
 
 import Calendar from "../components/calendar"
 import Countdown from "../components/countdown"
 
-const getContent = () => {
+const getContent = today => {
   const startDate = new Date(2020, 11, 1)
   const christmas = new Date(2020, 11, 25)
 
-  const today = new Date()
   const day = today.getDate()
 
   if (today < startDate) {
@@ -22,10 +21,16 @@ const getContent = () => {
 }
 
 export default function Home() {
+  const [today, setToday] = useState(new Date())
+
+  useEffect(() => {
+    setToday(new Date())
+  }, [])
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.moreSnow} />
-      {getContent()}
+      {getContent(today)}
     </div>
   )
 }
