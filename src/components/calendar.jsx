@@ -297,7 +297,7 @@ const Calendar = ({ day }) => {
     })
   }
 
-  const presentAnimation = () => {
+  const presentAnimation = doorNumber => {
     const timeline = anime.timeline({ easing: "easeOutExpo" })
 
     timeline.add({
@@ -320,7 +320,7 @@ const Calendar = ({ day }) => {
       scale: "1",
       duration: 1,
       complete: () => {
-        setDoorOpened(true)
+        if (doorNumber === day) setDoorOpened(true)
         setDisplayCalendar(false)
       },
     })
@@ -364,7 +364,7 @@ const Calendar = ({ day }) => {
       duration: 1500,
       complete: () => {
         setDisplayPresent(door)
-        presentAnimation()
+        presentAnimation(door)
       },
     })
   }
