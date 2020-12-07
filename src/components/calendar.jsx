@@ -89,7 +89,7 @@ const presents = {
     },
   },
   7: {
-    present: "",
+    present: "Patience, child",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -390,10 +390,9 @@ const Calendar = ({ day }) => {
       {displayTyper && (
         <Typer
           content={[
-            "Damn you fine",
-            "Oh not you",
-            "Who that behind you?",
-            "She a friend?",
+            "Damn it's Monday",
+            "Relax yourself",
+            "Let me snooze a little longer",
           ]}
           onEnd={startAnimation}
         />
