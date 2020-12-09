@@ -97,7 +97,7 @@ const presents = {
       left: "50%",
     },
   },
-  8: {§§
+  8: {
     present: "Fit for a Princess",
     animation: {
       translateY: ["-25%", "-50%"],
@@ -389,7 +389,11 @@ const Calendar = ({ day }) => {
       {displayTitle && <Title onMount={() => setDisplayTyper(true)} />}
       {displayTyper && (
         <Typer
-          content={["It's not GARBAGE!", "You just", "Don't know what real art is!"]}
+          content={[
+            "It's not GARBAGE!",
+            "You just",
+            "Don't know what real art is!",
+          ]}
           onEnd={startAnimation}
         />
       )}
