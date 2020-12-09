@@ -97,7 +97,7 @@ const presents = {
       left: "50%",
     },
   },
-  8: {
+  8: {§§
     present: "Fit for a Princess",
     animation: {
       translateY: ["-25%", "-50%"],
@@ -107,7 +107,7 @@ const presents = {
     },
   },
   9: {
-    present: "",
+    present: "You got enough of these?",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -116,7 +116,7 @@ const presents = {
     },
   },
   10: {
-    present: "",
+    present: "Going Ibiza",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -125,7 +125,7 @@ const presents = {
     },
   },
   11: {
-    present: "",
+    present: "Wake up, you'll find ",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -389,7 +389,7 @@ const Calendar = ({ day }) => {
       {displayTitle && <Title onMount={() => setDisplayTyper(true)} />}
       {displayTyper && (
         <Typer
-          content={["In the words of Shakespeare", "New phone", "Who dis?"]}
+          content={["It's not GARBAGE!", "You just", "Don't know what real art is!"]}
           onEnd={startAnimation}
         />
       )}
