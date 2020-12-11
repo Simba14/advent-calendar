@@ -125,7 +125,7 @@ const presents = {
     },
   },
   11: {
-    present: "Wake up, you'll find ",
+    present: "The scales don't lie",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -134,7 +134,7 @@ const presents = {
     },
   },
   12: {
-    present: "",
+    present: "Ms. Money Penny",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -143,7 +143,7 @@ const presents = {
     },
   },
   13: {
-    present: "",
+    present: "Hands on the wall where I can see them",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -152,7 +152,7 @@ const presents = {
     },
   },
   14: {
-    present: "",
+    present: "Snooze me",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -161,7 +161,7 @@ const presents = {
     },
   },
   15: {
-    present: "",
+    present: "Seen in the line of Berghain",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -170,7 +170,7 @@ const presents = {
     },
   },
   16: {
-    present: "",
+    present: "Good with Jam",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -179,7 +179,7 @@ const presents = {
     },
   },
   17: {
-    present: "",
+    present: "Asleep up high",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -188,7 +188,7 @@ const presents = {
     },
   },
   18: {
-    present: "",
+    present: "Mirror, Mirror on the wall",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -197,7 +197,7 @@ const presents = {
     },
   },
   19: {
-    present: "",
+    present: "Attic Escalator",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -389,11 +389,7 @@ const Calendar = ({ day }) => {
       {displayTitle && <Title onMount={() => setDisplayTyper(true)} />}
       {displayTyper && (
         <Typer
-          content={[
-            "It's not GARBAGE!",
-            "You just",
-            "Don't know what real art is!",
-          ]}
+          content={["Oh, so you think you're a doctor now?"]}
           onEnd={startAnimation}
         />
       )}
