@@ -390,9 +390,8 @@ const Calendar = ({ day }) => {
       {displayTyper && (
         <Typer
           content={[
-            "Jude Law in the Holiday",
-            "HOT AND BOTHERED",
-            "Now that's all I want for Christmas",
+            "Still waiting in the Berghain queue?",
+            "Heute leider nicht",
           ]}
           onEnd={startAnimation}
         />
