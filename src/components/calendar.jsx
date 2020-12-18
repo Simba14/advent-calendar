@@ -188,7 +188,7 @@ const presents = {
     },
   },
   18: {
-    present: "Mirror, Mirror on the wall",
+    present: "Letting go is the key",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -197,7 +197,7 @@ const presents = {
     },
   },
   19: {
-    present: "Attic Escalator",
+    present: "Snooze me",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -206,7 +206,7 @@ const presents = {
     },
   },
   20: {
-    present: "",
+    present: "Attic Escalator",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -215,7 +215,7 @@ const presents = {
     },
   },
   21: {
-    present: "",
+    present: "Dinner for 2",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -224,7 +224,7 @@ const presents = {
     },
   },
   22: {
-    present: "",
+    present: "Email",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -233,7 +233,7 @@ const presents = {
     },
   },
   23: {
-    present: "",
+    present: "Pants",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -242,7 +242,7 @@ const presents = {
     },
   },
   24: {
-    present: "Have you ever felt like a plastic bag",
+    present: "Bottle",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -251,7 +251,7 @@ const presents = {
     },
   },
   25: {
-    present: "Chicken on top",
+    present: "Book Poem",
     animation: {
       translateY: ["-100%", "-50%"],
       translateX: ["-50%", "-50%"],
@@ -388,13 +388,7 @@ const Calendar = ({ day }) => {
     <div key={day}>
       {displayTitle && <Title onMount={() => setDisplayTyper(true)} />}
       {displayTyper && (
-        <Typer
-          content={[
-            "Still waiting in the Berghain queue?",
-            "Heute leider nicht",
-          ]}
-          onEnd={startAnimation}
-        />
+        <Typer content={["New Day", "Go Get It!"]} onEnd={startAnimation} />
       )}
       {displayCalendar && (
         <div id="calendar" className={styles.calendar}>
