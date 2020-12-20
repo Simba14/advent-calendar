@@ -215,7 +215,7 @@ const presents = {
     },
   },
   21: {
-    present: "Dinner for 2",
+    present: "Worse tent you ever did see",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -224,7 +224,7 @@ const presents = {
     },
   },
   22: {
-    present: "Email",
+    present: "Delivery for Cody",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -233,7 +233,7 @@ const presents = {
     },
   },
   23: {
-    present: "Pants",
+    present: "Dinner for two, at a restaurant near you (Post Lockdown)",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -242,7 +242,7 @@ const presents = {
     },
   },
   24: {
-    present: "Bottle",
+    present: "You have mail",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -251,7 +251,7 @@ const presents = {
     },
   },
   25: {
-    present: "Book Poem",
+    present: "Under the Tree",
     animation: {
       translateY: ["-100%", "-50%"],
       translateX: ["-50%", "-50%"],
@@ -388,7 +388,10 @@ const Calendar = ({ day }) => {
     <div key={day}>
       {displayTitle && <Title onMount={() => setDisplayTyper(true)} />}
       {displayTyper && (
-        <Typer content={["New Day", "Go Get It!"]} onEnd={startAnimation} />
+        <Typer
+          content={["Something is cooking", "Brought direct to you"]}
+          onEnd={startAnimation}
+        />
       )}
       {displayCalendar && (
         <div id="calendar" className={styles.calendar}>
