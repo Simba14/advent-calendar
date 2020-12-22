@@ -389,7 +389,7 @@ const Calendar = ({ day }) => {
       {displayTitle && <Title onMount={() => setDisplayTyper(true)} />}
       {displayTyper && (
         <Typer
-          content={["Something is cooking", "Brought direct to you"]}
+          content={["You so brave", "You be destined for Greatness"]}
           onEnd={startAnimation}
         />
       )}
