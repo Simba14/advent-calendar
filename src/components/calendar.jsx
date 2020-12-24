@@ -391,7 +391,7 @@ const Calendar = ({ day }) => {
         <Typer
           content={[
             "Frohe Weihnachten",
-            "Oh you didn't think I spoke German",
+            "Oh you didn't think I spoke German?",
             "I'm the internet, Bitch",
           ]}
           onEnd={startAnimation}

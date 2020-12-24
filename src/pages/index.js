@@ -3,6 +3,7 @@ import styles from "./index.module.scss"
 
 import Calendar from "../components/calendar"
 import Countdown from "../components/countdown"
+import GameOver from "../components/gameOver"
 
 const getContent = today => {
   const startDate = new Date(2020, 11, 1)
@@ -17,7 +18,7 @@ const getContent = today => {
   if (today >= startDate && startDate <= christmas)
     return <Calendar day={day} />
 
-  return <div>Till Next Year (If you're lucky)</div>
+  return <GameOver />
 }
 
 export default function Home() {

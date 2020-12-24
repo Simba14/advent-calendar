@@ -2,7 +2,7 @@ import React, { useRef } from "react"
 
 import styles from "./typer.module.scss"
 
-const Typer = ({ content, onEnd }) => {
+const Typer = ({ content, onEnd, maintainLastSentence = false }) => {
   const cursorRef = useRef()
   const textRef = useRef()
 
@@ -27,9 +27,13 @@ const Typer = ({ content, onEnd }) => {
       cursorRef.current.style.display = "none"
 
       clearInterval(intervalVal)
-      setTimeout(function () {
-        intervalVal = setInterval(Delete, 50)
-      }, 1000)
+
+      // only delete if maintainLastSentence is false
+      if (!(maintainLastSentence && part === content.length - 1)) {
+        setTimeout(function () {
+          intervalVal = setInterval(Delete, 50)
+        }, 1000)
+      }
     }
   }
 
