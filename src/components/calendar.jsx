@@ -388,14 +388,7 @@ const Calendar = ({ day }) => {
     <div key={day}>
       {displayTitle && <Title onMount={() => setDisplayTyper(true)} />}
       {displayTyper && (
-        <Typer
-          content={[
-            "Frohe Weihnachten",
-            "Oh you didn't think I spoke German?",
-            "I'm the internet, Bitch",
-          ]}
-          onEnd={startAnimation}
-        />
+        <Typer content={["Frohe Weihnachten"]} onEnd={startAnimation} />
       )}
       {displayCalendar && (
         <div id="calendar" className={styles.calendar}>
