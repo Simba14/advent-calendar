@@ -15,8 +15,7 @@ const getContent = today => {
     return <Countdown today={today} start={startDate} />
   }
 
-  if (today >= startDate && startDate <= christmas)
-    return <Calendar day={day} />
+  if (today >= startDate && today <= christmas) return <Calendar day={day} />
 
   return <GameOver />
 }
