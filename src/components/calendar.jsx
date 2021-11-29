@@ -35,7 +35,7 @@ const data = [
 
 const presents = {
   1: {
-    present: "Your present is to be delivered by a white in fake Barbour",
+    present: "Holding your butt in public places",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -44,7 +44,7 @@ const presents = {
     },
   },
   2: {
-    present: "Get it before the Moths do",
+    present: "Waking up with you and our non-verbal check-ins",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -53,7 +53,7 @@ const presents = {
     },
   },
   3: {
-    present: "If you were to be bent over",
+    present: "Watching and reacting to love related content",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -62,7 +62,7 @@ const presents = {
     },
   },
   4: {
-    present: "In the Servants' quarters ",
+    present: "Painting in my room and sneaking a frequent glance at you",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -71,7 +71,7 @@ const presents = {
     },
   },
   5: {
-    present: "Just seeking some phototropism",
+    present: "Bending you over all the furniture in reach",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -80,7 +80,7 @@ const presents = {
     },
   },
   6: {
-    present: "On my way to Narnia",
+    present: "Pastries, particularly those Panas",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -89,7 +89,7 @@ const presents = {
     },
   },
   7: {
-    present: "Patience, child",
+    present: "Lying with you in the hammock in your parent's garden",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -98,7 +98,7 @@ const presents = {
     },
   },
   8: {
-    present: "Fit for a Princess",
+    present: "Creamy",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -107,7 +107,7 @@ const presents = {
     },
   },
   9: {
-    present: "You got enough of these?",
+    present: "Getting told how smug I am after telling friends about you",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -116,7 +116,8 @@ const presents = {
     },
   },
   10: {
-    present: "Going Ibiza",
+    present:
+      "That feeling a dog has, after a nice long walk, tip bits during the cooking, and the whole family in the living room, safe and sound.",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -125,7 +126,7 @@ const presents = {
     },
   },
   11: {
-    present: "The scales don't lie",
+    present: "Monica's eggs and the way you cooked them",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -134,7 +135,8 @@ const presents = {
     },
   },
   12: {
-    present: "Ms. Money Penny",
+    present:
+      "Thinking about you lots during the day, the reassuring feeling of our next meeting, not being too far away",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -143,7 +145,8 @@ const presents = {
     },
   },
   13: {
-    present: "Hands on the wall where I can see them",
+    present:
+      "Bowling with you and my family (In parellel, you bowling them away)",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -152,7 +155,7 @@ const presents = {
     },
   },
   14: {
-    present: "Snooze me",
+    present: "BTIB",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -161,7 +164,7 @@ const presents = {
     },
   },
   15: {
-    present: "Seen in the line of Berghain",
+    present: "Walking around, holding your hand",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -170,7 +173,8 @@ const presents = {
     },
   },
   16: {
-    present: "Good with Jam",
+    present:
+      "Laying by your side in a tent with no mat; You telling me how shit I put it up",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -179,7 +183,7 @@ const presents = {
     },
   },
   17: {
-    present: "Asleep up high",
+    present: "Reading to you as the day reaches its end",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -188,7 +192,8 @@ const presents = {
     },
   },
   18: {
-    present: "Letting go is the key",
+    present:
+      "The way you affectionately hold on to me for that extra moment longer",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -197,7 +202,7 @@ const presents = {
     },
   },
   19: {
-    present: "Snooze me",
+    present: `When you shrug, tilt your head to the side and tell me 'That's nice', and how you're always right`,
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -206,7 +211,7 @@ const presents = {
     },
   },
   20: {
-    present: "Attic Escalator",
+    present: "Your constant affection and affirmations.",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -215,7 +220,7 @@ const presents = {
     },
   },
   21: {
-    present: "Worse tent you ever did see",
+    present: "Snugging and hugging",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -224,7 +229,7 @@ const presents = {
     },
   },
   22: {
-    present: "Delivery for Cody",
+    present: "Bringing Cody into my life",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -233,7 +238,7 @@ const presents = {
     },
   },
   23: {
-    present: "Dinner for two, at a restaurant near you (Post Lockdown)",
+    present: "When we're in sync",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -242,7 +247,7 @@ const presents = {
     },
   },
   24: {
-    present: "You have mail",
+    present: "Dancing with you, watching the way you move",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -251,7 +256,8 @@ const presents = {
     },
   },
   25: {
-    present: "Under the Tree",
+    present:
+      "25 reasons why it's more than nice, a tiny sample of a huge, expanding list. My best mate, the love of my life",
     animation: {
       translateY: ["-100%", "-50%"],
       translateX: ["-50%", "-50%"],
@@ -388,7 +394,7 @@ const Calendar = ({ day }) => {
     <div key={day}>
       {displayTitle && <Title onMount={() => setDisplayTyper(true)} />}
       {displayTyper && (
-        <Typer content={["Frohe Weihnachten"]} onEnd={startAnimation} />
+        <Typer content={["25 reasons why it's nice"]} onEnd={startAnimation} />
       )}
       {displayCalendar && (
         <div id="calendar" className={styles.calendar}>
@@ -400,7 +406,7 @@ const Calendar = ({ day }) => {
             const doorNumber = `door${door.number}`
 
             return (
-              <div
+              <button
                 key={`${doorNumber}, ${day}`}
                 id={doorId}
                 ref={isActiveDay ? activeRef : null}
@@ -414,7 +420,7 @@ const Calendar = ({ day }) => {
                 }
               >
                 {door.number}
-              </div>
+              </button>
             )
           })}
         </div>
@@ -425,7 +431,7 @@ const Calendar = ({ day }) => {
             {presents[displayPresent].present}
           </div>
           <button className={styles.backBtn} id="back-btn" onClick={onBack}>
-            <img src={LeftArrow} />
+            <img alt="back arrow" src={LeftArrow} />
           </button>
         </div>
       )}

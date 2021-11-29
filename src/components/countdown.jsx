@@ -43,9 +43,7 @@ const Countdown = ({ today, start }) => {
       <Title onMount={onDisplayTimer} />
       {displayTimer && (
         <div id="timer" className={styles.timeLeft}>
-          <div className={styles.name}>
-            <span>Cody</span> Hannah,
-          </div>
+          <div className={styles.name}>Egg,</div>
           <div>Your Christmas Experience begins in:</div>
           <div id="time" className={styles.timer}>
             {str1[0]}

@@ -16,6 +16,7 @@ const Typer = ({ content, onEnd, maintainLastSentence = false }) => {
   let intervalVal
 
   const Type = () => {
+    if (!textRef.current) return
     // Get substring with 1 characater added
     const text = content[part].substring(0, partIndex + 1)
     textRef.current.innerHTML = text
@@ -40,15 +41,14 @@ const Typer = ({ content, onEnd, maintainLastSentence = false }) => {
   const Delete = () => {
     // Get substring with 1 characater deleted
     const text = content[part].substring(0, partIndex - 1)
+
     textRef.current.innerHTML = text
     partIndex--
-
-    // If sentence has been deleted then start to display the next sentence
     if (part === content.length - 1 && text === "") {
       clearInterval(intervalVal)
       onEnd()
     }
-
+    // If sentence has been deleted then start to display the next sentence
     if (text === "" && part !== content.length - 1) {
       clearInterval(intervalVal)
 

@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import anime from "animejs/lib/anime.es.js"
 import Title from "../components/title"
 import Typer from "../components/typer"
 
