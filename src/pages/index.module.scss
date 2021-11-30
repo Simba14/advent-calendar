@@ -89,3 +89,24 @@ body {
   text-align: center;
   padding: 32px;
 }
+
+.protected {
+  background: green;
+  z-index: 10000;
+  width: 500px;
+  max-width: 80%;
+  display: flex;
+  padding: 32px;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .password {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
