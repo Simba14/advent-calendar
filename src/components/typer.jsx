@@ -1,6 +1,6 @@
 import React, { useRef } from "react"
 
-import styles from "./typer.module.scss"
+import * as styles from "./typer.module.scss"
 
 const Typer = ({ content, onEnd, maintainLastSentence = false }) => {
   const cursorRef = useRef()

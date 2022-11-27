@@ -3,7 +3,7 @@ import anime from "animejs/lib/anime.es.js"
 import Title from "../components/title"
 import Typer from "../components/typer"
 import LeftArrow from "../assets/left-arrow.svg"
-import styles from "./calendar.module.scss"
+import * as styles from "./calendar.module.scss"
 
 const data = [
   { number: 3 },
@@ -35,7 +35,8 @@ const data = [
 
 const presents = {
   1: {
-    present: "Holding your butt in public places",
+    present:
+      "Knowing you'd always be there on the touch line supporting me, even in the ugliest parts of London with the rain pissing down, against a team of overweight middle-aged alcoholics. You'd be there.",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -44,7 +45,8 @@ const presents = {
     },
   },
   2: {
-    present: "Waking up with you and our non-verbal check-ins",
+    present:
+      "The way you love and support my mum with every part of your being. Your devotion to her shelters every moment",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -53,7 +55,8 @@ const presents = {
     },
   },
   3: {
-    present: "Watching and reacting to love related content",
+    present:
+      "Your attention to the minutiae of the world around you, the intricacies behind the creative process, the tiny often overlooked parts that make the whole. Your excitement in sharing those details with others.",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -62,7 +65,8 @@ const presents = {
     },
   },
   4: {
-    present: "Painting in my room and sneaking a frequent glance at you",
+    present:
+      "Introducing me to Arsenal and the first true love of my love, Thierry.",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -71,7 +75,8 @@ const presents = {
     },
   },
   5: {
-    present: "Bending you over all the furniture in reach",
+    present:
+      "Showing me from an early age that strength and sensitivity are not mutually exclusive.",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -80,7 +85,8 @@ const presents = {
     },
   },
   6: {
-    present: "Pastries, particularly those Panas",
+    present:
+      "For knowing that whatever happens, I can rely on your care and support. The freedom of thought and expression that comes from that reassurance is priceless.",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -89,7 +95,7 @@ const presents = {
     },
   },
   7: {
-    present: "Lying with you in the hammock in your parent's garden",
+    present: "For being a truly wonderful human.",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -98,7 +104,7 @@ const presents = {
     },
   },
   8: {
-    present: "Creamy",
+    present: "Your Oven baked dinners... Tuna Bake, Lasagna mmm",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -107,7 +113,8 @@ const presents = {
     },
   },
   9: {
-    present: "Getting told how smug I am after telling friends about you",
+    present:
+      "Seeing you perform fearlessly on stage. Whichever character you were playing, I was always filled with such pride and inspiration",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -117,7 +124,7 @@ const presents = {
   },
   10: {
     present:
-      "That feeling a dog has, after a nice long walk, tip bits during the cooking, and the whole family in the living room, safe and sound.",
+      "How you manage the distance to Oz and your own family. I know it must be tough but you always handle it with such grace.",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -126,7 +133,8 @@ const presents = {
     },
   },
   11: {
-    present: "Monica's eggs and the way you cooked them",
+    present:
+      "Providing me with a wonderful big brother (The main plot line of this script, let's not forget).",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -136,7 +144,7 @@ const presents = {
   },
   12: {
     present:
-      "Thinking about you lots during the day, the reassuring feeling of our next meeting, not being too far away",
+      "Buying me whatever random football kit or sports related thing I craved in the moment",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -145,8 +153,7 @@ const presents = {
     },
   },
   13: {
-    present:
-      "Bowling with you and my family (In parellel, you bowling them away)",
+    present: "Walking up to Cockfoster with you",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -155,7 +162,7 @@ const presents = {
     },
   },
   14: {
-    present: "BTIB",
+    present: "Showing me what healthy masculinity looks like.",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -164,7 +171,8 @@ const presents = {
     },
   },
   15: {
-    present: "Walking around, holding your hand",
+    present:
+      "Fully backing and encouraging every decision I have made. Trusting in me",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -173,8 +181,7 @@ const presents = {
     },
   },
   16: {
-    present:
-      "Laying by your side in a tent with no mat; You telling me how shit I put it up",
+    present: "Embracing the Blundell's, even when it might not be the easiest.",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -183,7 +190,8 @@ const presents = {
     },
   },
   17: {
-    present: "Reading to you as the day reaches its end",
+    present:
+      "Disney Land and all the other wonderful holidays, but mainly Disney Land.",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -193,7 +201,7 @@ const presents = {
   },
   18: {
     present:
-      "The way you affectionately hold on to me for that extra moment longer",
+      "Your genuine passion and enthusiam with whomever and whatever you are discussing",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -202,7 +210,7 @@ const presents = {
     },
   },
   19: {
-    present: `When you shrug, tilt your head to the side and tell me 'That's nice', and how you're always right`,
+    present: `Knowing that I can come to you with any problem and that I will always receive thoughtful advice and feedback.`,
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -211,7 +219,7 @@ const presents = {
     },
   },
   20: {
-    present: "Your constant affection and affirmations.",
+    present: "Proof reading all my Uni work! I haven't forgotten!",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -220,7 +228,8 @@ const presents = {
     },
   },
   21: {
-    present: "Snugging and hugging",
+    present:
+      "Introducing me to Cinema and Theatre as an art form, not just one of entertainment.",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -229,7 +238,8 @@ const presents = {
     },
   },
   22: {
-    present: "Bringing Cody into my life",
+    present:
+      "The relationship you share with mum. You've both shown me what a good love looks like",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -238,7 +248,8 @@ const presents = {
     },
   },
   23: {
-    present: "When we're in sync",
+    present:
+      "Teaching me what acceptance is and what inclusion looks like. And for letting me know when I was younger what language or views were unacceptable.",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -247,7 +258,8 @@ const presents = {
     },
   },
   24: {
-    present: "Dancing with you, watching the way you move",
+    present:
+      "For always wanting to spend time with me and do cute things (like building the Emirates).",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -257,7 +269,7 @@ const presents = {
   },
   25: {
     present:
-      "25 reasons why it's more than nice, a tiny sample of a huge, expanding list. My best mate, the love of my life",
+      "25 reasons why I feel so grateful to have you as an ever-present role model in my life. A tiny sample of a huge, expanding list.",
     animation: {
       translateY: ["-100%", "-50%"],
       translateX: ["-50%", "-50%"],
@@ -394,7 +406,12 @@ const Calendar = ({ day }) => {
     <div key={day}>
       {displayTitle && <Title onMount={() => setDisplayTyper(true)} />}
       {displayTyper && (
-        <Typer content={["25 reasons why it's nice"]} onEnd={startAnimation} />
+        <Typer
+          content={[
+            "25 reasons why I am extremely grateful to have you as my dad",
+          ]}
+          onEnd={startAnimation}
+        />
       )}
       {displayCalendar && (
         <div id="calendar" className={styles.calendar}>

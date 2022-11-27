@@ -1,10 +1,10 @@
 import React, { useState } from "react"
-import styles from "./index.module.scss"
+import * as styles from "./index.module.scss"
 
 import Content from "../components/content"
 
 export default function Home() {
-  const [contentEnabled, setContentEnabled] = useState(false)
+  const [contentEnabled, setContentEnabled] = useState(true)
   const [userInput, setUserInput] = useState("")
 
   const onSubmit = e => {
@@ -24,7 +24,7 @@ export default function Home() {
       {contentEnabled ? (
         <Content />
       ) : (
-        <form className={styles.protected} onSubmit={onSubmit}>
+        <form className={styles.gateway} onSubmit={onSubmit}>
           <input
             autoFocus
             className={styles.password}

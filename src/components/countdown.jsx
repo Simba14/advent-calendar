@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
-import countdown from "countdown"
+import { countdown } from "../countdown"
 import anime from "animejs/lib/anime.es.js"
-import styles from "./countdown.module.scss"
+import * as styles from "./countdown.module.scss"
 import Title from "../components/title"
 
 const Countdown = ({ today, start }) => {
@@ -43,7 +43,7 @@ const Countdown = ({ today, start }) => {
       <Title onMount={onDisplayTimer} />
       {displayTimer && (
         <div id="timer" className={styles.timeLeft}>
-          <div className={styles.name}>Egg,</div>
+          <div className={styles.name}>Dad,</div>
           <div>Your Christmas Experience begins in:</div>
           <div id="time" className={styles.timer}>
             {str1[0]}
