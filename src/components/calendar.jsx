@@ -36,7 +36,7 @@ const data = [
 const presents = {
   1: {
     present:
-      "Knowing you'd always be there on the touch line supporting me, even in the ugliest parts of London with the rain pissing down, against a team of overweight middle-aged alcoholics. You'd be there.",
+      "Knowing you'd always be there on the touchline supporting me, even in the ugliest parts of London with the rain pissing down, against a team of overweight middle-aged alcoholics. You'd be there.",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
