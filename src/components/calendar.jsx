@@ -46,7 +46,7 @@ const presents = {
   },
   2: {
     present:
-      "The way you love and support my mum with every part of your being. Your devotion to her shelters every moment",
+      "The way you love and support my mum with every part of your being. Your devotion to her shines through every moment",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -95,7 +95,7 @@ const presents = {
     },
   },
   7: {
-    present: "For being a truly wonderful human.",
+    present: "For being a truly wonderful and compassionate human.",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
