@@ -153,7 +153,7 @@ const presents = {
     },
   },
   13: {
-    present: "Walking up to Cockfoster with you",
+    present: "Simple strolls up to Cockfosters with you",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -229,7 +229,7 @@ const presents = {
   },
   21: {
     present:
-      "Introducing me to Cinema and Theatre as an art form, not just one of entertainment.",
+      "Teaching me the cultural significance of Cinema and Theatre, and allowing me to view it as art rather than just pure entertainment.",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
