@@ -124,7 +124,7 @@ const presents = {
   },
   10: {
     present:
-      "How you manage the distance to Oz and your own family. I know it must be tough but you always handle it with such grace.",
+      "How you manage the distance to Oz and your family there. I know it must be tough but you always handle it with such grace.",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -191,7 +191,7 @@ const presents = {
   },
   17: {
     present:
-      "Disney Land and all the other wonderful holidays, but mainly Disney Land.",
+      "Disney Land and all the other wonderful holidays, but mainly Disney Land. I still refuse to believe mum didn't enjoy it.",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -210,7 +210,7 @@ const presents = {
     },
   },
   19: {
-    present: `Knowing that I can come to you with any problem and that I will always receive thoughtful advice and feedback.`,
+    present: `Knowing that I can come to you with any problem and that I will always receive thoughtful advice.`,
     animation: {
       translateY: "-50%",
       translateX: "-50%",
