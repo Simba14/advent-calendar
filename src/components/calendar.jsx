@@ -36,7 +36,7 @@ const data = [
 const presents = {
   1: {
     present:
-      "Knowing you'd always be there on the touchline supporting me, even in the ugliest parts of London with the rain pissing down, against a team of overweight middle-aged alcoholics. You'd be there.",
+      "I’ve been thinking about taking up meditation. I figure it’s better than sitting around and doing nothing.",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -45,8 +45,7 @@ const presents = {
     },
   },
   2: {
-    present:
-      "The way you love and support my mum with every part of your being. Your devotion to her shines through every moment",
+    present: "Did you hear about the kidnapping? They woke her up.",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -55,8 +54,7 @@ const presents = {
     },
   },
   3: {
-    present:
-      "Your attention to the minutiae of the world around you, the intricacies behind the creative process, the tiny often overlooked parts that make the whole. Your excitement in sharing those details with others.",
+    present: "Did you hear about the kidnapping? They woke her up.",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -76,7 +74,7 @@ const presents = {
   },
   5: {
     present:
-      "Showing me from an early age that strength and sensitivity are not mutually exclusive.",
+      "I lost my job at the bank on my first day. A woman asked me to check her balance, so I pushed her over.",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -85,8 +83,7 @@ const presents = {
     },
   },
   6: {
-    present:
-      "For knowing that whatever happens, I can rely on your care and support. The freedom of thought and expression that comes from that reassurance is priceless.",
+    present: "I once read a book about glue. I couldn’t put it down.",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -95,7 +92,8 @@ const presents = {
     },
   },
   7: {
-    present: "For being a truly wonderful and compassionate human.",
+    present:
+      "Two goldfish are in a tank. One says to the other, “Do you know how to drive this thing?”",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -104,7 +102,8 @@ const presents = {
     },
   },
   8: {
-    present: "Your Oven baked dinners... Tuna Bake, Lasagna mmm",
+    present:
+      "I know a lot of jokes about retired people, but none of them work.",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -113,8 +112,7 @@ const presents = {
     },
   },
   9: {
-    present:
-      "Seeing you perform fearlessly on stage. Whichever character you were playing, I was always filled with such pride and inspiration",
+    present: "What do you call a man with a rubber toe? Roberto!",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -123,8 +121,7 @@ const presents = {
     },
   },
   10: {
-    present:
-      "How you manage the distance to Oz and your family there. I know it must be tough but you always handle it with such grace.",
+    present: "Humpty Dumpty had a great fall. Summer wasn’t bad either.",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -133,8 +130,7 @@ const presents = {
     },
   },
   11: {
-    present:
-      "Providing me with a wonderful big brother (The main plot line of this script, let's not forget).",
+    present: "Did you hear about the kidnapping? They woke her up.",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -144,7 +140,7 @@ const presents = {
   },
   12: {
     present:
-      "Buying me whatever random football kit or sports related thing I craved in the moment",
+      "My wife asked me to stop singing “Wonderwall” to her. I said maybe...",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -407,9 +403,7 @@ const Calendar = ({ day }) => {
       {displayTitle && <Title onMount={() => setDisplayTyper(true)} />}
       {displayTyper && (
         <Typer
-          content={[
-            "25 reasons why I am extremely grateful to have you as my dad",
-          ]}
+          content={["25 rubbish jokes, nothing more"]}
           onEnd={startAnimation}
         />
       )}
