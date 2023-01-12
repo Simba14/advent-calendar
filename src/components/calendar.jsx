@@ -63,8 +63,9 @@ const presents = {
     },
   },
   4: {
-    present:
-      "Introducing me to Arsenal and the first true love of my love, Thierry.",
+    present: `Who’s there? Interrupting cow.
+       Interrupting c–
+       MOO!`,
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
