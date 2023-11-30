@@ -68,7 +68,7 @@ const Typer = ({ content, onEnd, maintainLastSentence = false }) => {
   return (
     <div className={styles.container}>
       <div className={styles.text} id={"text"} ref={textRef}></div>
-      <div className={styles.cursor} id={"cursor"} ref={cursorRef}></div>
+      <span className={styles.cursor} id={"cursor"} ref={cursorRef}></span>
     </div>
   )
 }

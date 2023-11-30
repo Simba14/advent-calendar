@@ -36,7 +36,7 @@ const data = [
 const presents = {
   1: {
     present:
-      "I’ve been thinking about taking up meditation. I figure it’s better than sitting around and doing nothing.",
+      "You're the strongest person I know and my biggest inspiration. And that will never change. From day one to forever.",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -45,7 +45,8 @@ const presents = {
     },
   },
   2: {
-    present: "Did you hear about the kidnapping? They woke her up.",
+    present:
+      "Driving me to the arse end of London for all my football games. Supporting me even though you hated football and were surrounded by shitty parents. You always put me first, even on your days off.",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -54,7 +55,8 @@ const presents = {
     },
   },
   3: {
-    present: "Did you hear about the kidnapping? They woke her up.",
+    present:
+      "Never holding back your opinions and always standing up for yourself and those you care about.",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -63,9 +65,8 @@ const presents = {
     },
   },
   4: {
-    present: `Who’s there? Interrupting cow.
-       Interrupting c–
-       MOO!`,
+    present:
+      "For using swear words like no one else. The word 'Cunt' has never been uttered with such vigour.",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -74,8 +75,7 @@ const presents = {
     },
   },
   5: {
-    present:
-      "I lost my job at the bank on my first day. A woman asked me to check her balance, so I pushed her over.",
+    present: "Falling in love with the best Dad I could have ever hoped for.",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -404,7 +404,9 @@ const Calendar = ({ day }) => {
       {displayTitle && <Title onMount={() => setDisplayTyper(true)} />}
       {displayTyper && (
         <Typer
-          content={["25 rubbish jokes, nothing more"]}
+          content={[
+            "25 reasons why I am extremely grateful to have you as my mum",
+          ]}
           onEnd={startAnimation}
         />
       )}
