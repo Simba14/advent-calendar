@@ -84,7 +84,8 @@ const presents = {
     },
   },
   6: {
-    present: "I once read a book about glue. I couldn’t put it down.",
+    present:
+      "For knowing that whatever happens, I can rely on your care and support. The freedom of thought and expression that comes from that reassurance is priceless.",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -94,7 +95,7 @@ const presents = {
   },
   7: {
     present:
-      "Two goldfish are in a tank. One says to the other, “Do you know how to drive this thing?”",
+      "For being the best cook alive. I don't know how the fuck you do it, but not only can you whip something up in 20 minutes, it's always absolutely delicious",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -104,7 +105,7 @@ const presents = {
   },
   8: {
     present:
-      "I know a lot of jokes about retired people, but none of them work.",
+      "Seeing you shine on stage. Whichever character, whatever the role, you always stole the show",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -113,7 +114,8 @@ const presents = {
     },
   },
   9: {
-    present: "What do you call a man with a rubber toe? Roberto!",
+    present:
+      "Your sense of humour and teaching me to never take myself too seriously",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -122,7 +124,8 @@ const presents = {
     },
   },
   10: {
-    present: "Humpty Dumpty had a great fall. Summer wasn’t bad either.",
+    present:
+      "For saving me from a life of heroin addiction and chronic depression by convincing me to sing Michael Buble at my X-factor audition",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -131,7 +134,8 @@ const presents = {
     },
   },
   11: {
-    present: "Did you hear about the kidnapping? They woke her up.",
+    present:
+      "For being such a great mum to Gulli and giving me a wonderful big brother",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -141,7 +145,7 @@ const presents = {
   },
   12: {
     present:
-      "My wife asked me to stop singing “Wonderwall” to her. I said maybe...",
+      "Curling up on the sofa with you and watching trashy tv. The time where I feel most at home",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -150,7 +154,8 @@ const presents = {
     },
   },
   13: {
-    present: "Simple strolls up to Cockfosters with you",
+    present:
+      "For always picking me up and dropping me off. Whatever the time I knew you'd always be there.",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -159,7 +164,8 @@ const presents = {
     },
   },
   14: {
-    present: "Showing me what healthy masculinity looks like.",
+    present:
+      "Writing all my essays in school for me and getting me A*s. Probably only got into Owens because of you.",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -169,7 +175,7 @@ const presents = {
   },
   15: {
     present:
-      "Fully backing and encouraging every decision I have made. Trusting in me",
+      "Fully backing and encouraging every decision I have made. You always made me feel safe and sane.",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -178,7 +184,8 @@ const presents = {
     },
   },
   16: {
-    present: "Embracing the Blundell's, even when it might not be the easiest.",
+    present:
+      "Being a key part of this whacky and wonderful Blundell family. I'm so priveleged to be a part of it.",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -187,8 +194,7 @@ const presents = {
     },
   },
   17: {
-    present:
-      "Disney Land and all the other wonderful holidays, but mainly Disney Land. I still refuse to believe mum didn't enjoy it.",
+    present: "Making me a feminist from day one!",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -198,7 +204,7 @@ const presents = {
   },
   18: {
     present:
-      "Your genuine passion and enthusiam with whomever and whatever you are discussing",
+      "For being the most hardworking, competent person I know. Whatever you choose to do, you always smash it.",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -207,7 +213,8 @@ const presents = {
     },
   },
   19: {
-    present: `Knowing that I can come to you with any problem and that I will always receive thoughtful advice.`,
+    present:
+      "Showing me what true love looks like. Your relationship and devotion to Dad is inspiring and I'm so grateful to be a constant witness to it.",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -216,7 +223,8 @@ const presents = {
     },
   },
   20: {
-    present: "Proof reading all my Uni work! I haven't forgotten!",
+    present:
+      "For giving me great genes. I think it's fair to say you can take full credit for all the good parts of my genetics",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -226,7 +234,7 @@ const presents = {
   },
   21: {
     present:
-      "Teaching me the cultural significance of Cinema and Theatre, and allowing me to view it as art rather than just pure entertainment.",
+      "Teaching me the cultural significance of the Arts, and allowing me to view it as so much more than just pure entertainment.",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -235,8 +243,7 @@ const presents = {
     },
   },
   22: {
-    present:
-      "The relationship you share with mum. You've both shown me what a good love looks like",
+    present: "",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
