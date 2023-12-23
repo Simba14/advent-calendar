@@ -243,7 +243,8 @@ const presents = {
     },
   },
   22: {
-    present: "",
+    present:
+      "For sheltering me from all the bad. I don't think I'll ever be able to fully comprehend all of the things you had to deal with, but despite all that, you always put me in a position where I felt loved and safe.",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -262,8 +263,7 @@ const presents = {
     },
   },
   24: {
-    present:
-      "For always wanting to spend time with me and do cute things (like building the Emirates).",
+    present: "For always wanting to spend time with me and do cute things.",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -273,7 +273,7 @@ const presents = {
   },
   25: {
     present:
-      "25 reasons why I feel so grateful to have you as an ever-present role model in my life. A tiny sample of a huge, expanding list.",
+      "25 reasons why I feel immensely grateful to have you as my mum. A tiny sample of a huge, expanding list. You're the most important person in this world to me. Everything I am is you.",
     animation: {
       translateY: ["-100%", "-50%"],
       translateX: ["-50%", "-50%"],
