@@ -412,7 +412,7 @@ const Calendar = ({ day }) => {
       {displayTyper && (
         <Typer
           content={[
-            "25 reasons why I am extremely grateful to have you as my mum",
+            "25 things I can't wait to do with you!",
           ]}
           onEnd={startAnimation}
         />

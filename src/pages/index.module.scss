@@ -92,12 +92,16 @@ body {
 }
 
 .gateway {
-  background: green;
+  background: rgba(15, 98, 53, 0.9);
   z-index: 10000;
   width: 500px;
   max-width: 80%;
   display: flex;
+  flex-direction: column;
+  gap: 8px;
   padding: 32px;
+  border-radius: 16px;
+  align-items: center;
   justify-content: center;
   position: fixed;
   top: 50%;
@@ -109,5 +113,11 @@ body {
     padding: 8px;
     font-size: 16px;
     line-height: 21px;
+  }
+  .passwordLabel {
+    font-family: "Henny Penny", cursive;
+    font-size: 32px;
+    line-height: 1.1;
+    color: #ffeb0a;
   }
 }

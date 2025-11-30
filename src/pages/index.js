@@ -4,7 +4,7 @@ import * as styles from "./index.module.scss"
 import Content from "../components/content"
 
 export default function Home() {
-  const [contentEnabled, setContentEnabled] = useState(true)
+  const [contentEnabled, setContentEnabled] = useState(false)
   const [userInput, setUserInput] = useState("")
 
   const onSubmit = e => {
@@ -16,6 +16,9 @@ export default function Home() {
 
   const handleOnChange = e => {
     setUserInput(e.target.value)
+    if (e.target.value === process.env.GATSBY_URL) {
+      setContentEnabled(true)
+    }
   }
 
   return (
@@ -25,6 +28,9 @@ export default function Home() {
         <Content />
       ) : (
         <form className={styles.gateway} onSubmit={onSubmit}>
+          <label className={styles.passwordLabel} htmlFor="password">
+            What am I?
+          </label>
           <input
             autoFocus
             className={styles.password}

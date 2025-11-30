@@ -1,8 +1,9 @@
 .timeLeft {
   font-family: "Henny Penny", sans-serif;
-  font-size: 24px;
+  font-size: 32px;
+  letter-spacing: 2px;
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 550px;
@@ -10,13 +11,13 @@
   z-index: 100;
   background-color: black;
   border-radius: 15px;
-  background: rgba(15, 98, 53, 0.8);
+  background: rgba(15, 98, 53, 0.9);
   opacity: 0;
   max-width: 80%;
 
   @media (max-width: 500px) {
-    font-size: 16px;
-    top: 50%;
+    font-size: 24px;
+    top: 40%;
   }
 
   .name {

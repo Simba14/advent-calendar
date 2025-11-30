@@ -5,8 +5,8 @@ import Countdown from "../components/countdown"
 import GameOver from "../components/gameOver"
 
 const getContent = today => {
-  const startDate = new Date(2023, 11, 1)
-  const christmas = new Date(2023, 11, 31)
+  const startDate = new Date(2025, 11, 1)
+  const christmas = new Date(2025, 11, 31)
 
   const day = today.getDate()
 
