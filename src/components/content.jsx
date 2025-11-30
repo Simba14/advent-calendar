@@ -6,7 +6,7 @@ import GameOver from "../components/gameOver"
 
 // Mock date for testing - set to null to use real date
 // Example: new Date(2025, 11, 1) for December 1, 2025 (month is 0-indexed, so 11 = December)
-const MOCK_DATE = new Date(2025, 11, 3)
+const MOCK_DATE = null
 
 const getContent = today => {
   const startDate = new Date(2025, 11, 1)
