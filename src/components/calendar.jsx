@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react"
+import React, { useRef, useState, useLayoutEffect } from "react"
 import anime from "animejs/lib/anime.es.js"
 import Title from "../components/title"
 import Typer from "../components/typer"
@@ -36,7 +36,7 @@ const data = [
 const presents = {
   1: {
     present:
-      "You're the strongest person I know and my biggest inspiration. And that will never change. From day one to forever.",
+      "1. Letting you know every day how much I love you, and constantly finding new ways to express it - to show you how much I care, to show you how much you mean.",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -46,7 +46,7 @@ const presents = {
   },
   2: {
     present:
-      "Driving me to the arse end of London for all my football games. Supporting me even though you hated football and were surrounded by shitty parents. You always put me first, even on your days off.",
+      "2. Coming up with 1000’s of nicknames for you - All needed to capture the depth of your beautiful sweet & silly personality.",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -55,8 +55,7 @@ const presents = {
     },
   },
   3: {
-    present:
-      "Never holding back your opinions and always standing up for yourself and those you care about.",
+    present: "",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -65,8 +64,7 @@ const presents = {
     },
   },
   4: {
-    present:
-      "For using swear words like no one else. The word 'Cunt' has never been uttered with such vigour.",
+    present: "",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -75,7 +73,7 @@ const presents = {
     },
   },
   5: {
-    present: "Falling in love with the best Dad I could have ever hoped for.",
+    present: "",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -84,8 +82,7 @@ const presents = {
     },
   },
   6: {
-    present:
-      "For knowing that whatever happens, I can rely on your care and support. The freedom of thought and expression that comes from that reassurance is priceless.",
+    present: "",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -94,8 +91,7 @@ const presents = {
     },
   },
   7: {
-    present:
-      "For being the best cook alive. I don't know how the fuck you do it, but not only can you whip something up in 20 minutes, it's always absolutely delicious",
+    present: "",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -104,8 +100,7 @@ const presents = {
     },
   },
   8: {
-    present:
-      "Seeing you shine on stage. Whichever character, whatever the role, you always stole the show",
+    present: "",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -114,8 +109,7 @@ const presents = {
     },
   },
   9: {
-    present:
-      "Your sense of humour and teaching me to never take myself too seriously",
+    present: "",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -124,8 +118,7 @@ const presents = {
     },
   },
   10: {
-    present:
-      "For saving me from a life of heroin addiction and chronic depression by convincing me to sing Michael Buble at my X-factor audition",
+    present: "",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -134,8 +127,7 @@ const presents = {
     },
   },
   11: {
-    present:
-      "For being such a great mum to Gulli and giving me a wonderful big brother",
+    present: "",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -144,8 +136,7 @@ const presents = {
     },
   },
   12: {
-    present:
-      "Curling up on the sofa with you and watching trashy tv. The time where I feel most at home",
+    present: "",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -154,8 +145,7 @@ const presents = {
     },
   },
   13: {
-    present:
-      "For always picking me up and dropping me off. Whatever the time I knew you'd always be there.",
+    present: "",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -164,8 +154,7 @@ const presents = {
     },
   },
   14: {
-    present:
-      "Writing all my essays in school for me and getting me A*s. Probably only got into Owens because of you.",
+    present: "",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -174,8 +163,7 @@ const presents = {
     },
   },
   15: {
-    present:
-      "Fully backing and encouraging every decision I have made. You always made me feel safe and sane.",
+    present: "",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -184,8 +172,7 @@ const presents = {
     },
   },
   16: {
-    present:
-      "Being a key part of this whacky and wonderful Blundell family. I'm so priveleged to be a part of it.",
+    present: "",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -194,7 +181,7 @@ const presents = {
     },
   },
   17: {
-    present: "Making me a feminist from day one!",
+    present: "",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -203,8 +190,7 @@ const presents = {
     },
   },
   18: {
-    present:
-      "For being the most hardworking, competent person I know. Whatever you choose to do, you always smash it.",
+    present: "",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -213,8 +199,7 @@ const presents = {
     },
   },
   19: {
-    present:
-      "Showing me what true love looks like. Your relationship and devotion to Dad is inspiring and I'm so grateful to be a constant witness to it.",
+    present: "",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -223,8 +208,7 @@ const presents = {
     },
   },
   20: {
-    present:
-      "For giving me great genes. I think it's fair to say you can take full credit for all the good parts of my genetics",
+    present: "",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -233,8 +217,7 @@ const presents = {
     },
   },
   21: {
-    present:
-      "Teaching me the cultural significance of the Arts, and allowing me to view it as so much more than just pure entertainment.",
+    present: "",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -243,8 +226,7 @@ const presents = {
     },
   },
   22: {
-    present:
-      "For sheltering me from all the bad. I don't think I'll ever be able to fully comprehend all of the things you had to deal with, but despite all that, you always put me in a position where I felt loved and safe.",
+    present: "",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -253,8 +235,7 @@ const presents = {
     },
   },
   23: {
-    present:
-      "Teaching me what acceptance is and what inclusion looks like. And for letting me know when I was younger what language or views were unacceptable.",
+    present: "",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -263,7 +244,7 @@ const presents = {
     },
   },
   24: {
-    present: "For always wanting to spend time with me and do cute things.",
+    present: "",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -273,7 +254,7 @@ const presents = {
   },
   25: {
     present:
-      "25 reasons why I feel immensely grateful to have you as my mum. A tiny sample of a huge, expanding list. You're the most important person in this world to me. Everything I am is you.",
+      "25 reasons. A tiny sample of a huge, expanding list. You're the most important person in this world to me. Everything I am is you.",
     animation: {
       translateY: ["-100%", "-50%"],
       translateX: ["-50%", "-50%"],
@@ -289,13 +270,17 @@ const FUTURE_DOOR = "future-door"
 
 const Calendar = ({ day }) => {
   const activeRef = useRef()
+  const presentTextRef = useRef(null)
+  const backBtnRef = useRef(null)
+  const presentContainerRef = useRef(null)
+  const currentTargetRef = useRef(null)
   const [displayTyper, setDisplayTyper] = useState(false)
   const [displayTitle, setDisplayTitle] = useState(true)
   const [doorOpened, setDoorOpened] = useState(false)
   const [displayPresent, setDisplayPresent] = useState(false)
   const [displayCalendar, setDisplayCalendar] = useState(true)
   const [animating, setAnimating] = useState(false)
-  let currentTarget
+  const [currentDoorNumber, setCurrentDoorNumber] = useState(null)
 
   const startAnimation = () => {
     setDisplayTyper(false)
@@ -319,42 +304,62 @@ const Calendar = ({ day }) => {
     })
   }
 
-  const presentAnimation = doorNumber => {
+  const presentAnimation = (doorNumber, targetElement) => {
     const timeline = anime.timeline({ easing: "easeOutExpo" })
 
-    timeline.add({
-      targets: "#present-text",
-      opacity: 1,
-      translateX: [300, 0],
-      translateY: [400, 0],
-      duration: 1500,
-    })
-    timeline.add(
-      {
-        targets: currentTarget,
-        opacity: 0,
-        duration: 2500,
-      },
-      "-=1500"
-    )
-    timeline.add({
-      targets: currentTarget,
-      scale: "1",
-      duration: 1,
-      complete: () => {
-        if (doorNumber === day) setDoorOpened(true)
-        setDisplayCalendar(false)
-      },
-    })
-    timeline.add({
-      targets: "#back-btn",
-      opacity: 1,
-      duration: 1000,
-    })
+    if (presentTextRef.current) {
+      timeline.add({
+        targets: presentTextRef.current,
+        opacity: 1,
+        translateX: [300, 0],
+        translateY: [400, 0],
+        duration: 1500,
+      })
+    }
+
+    if (targetElement) {
+      timeline.add(
+        {
+          targets: targetElement,
+          opacity: 0,
+          duration: 2500,
+        },
+        "-=1500",
+      )
+      timeline.add({
+        targets: targetElement,
+        scale: "1",
+        duration: 1,
+        complete: () => {
+          if (doorNumber === day) setDoorOpened(true)
+          setDisplayCalendar(false)
+        },
+      })
+    }
+
+    if (backBtnRef.current) {
+      timeline.add({
+        targets: backBtnRef.current,
+        opacity: 1,
+        duration: 1000,
+      })
+    }
   }
 
+  // Use useLayoutEffect to animate present when it's displayed
+  useLayoutEffect(() => {
+    if (
+      displayPresent &&
+      currentDoorNumber &&
+      presentTextRef.current &&
+      backBtnRef.current
+    ) {
+      presentAnimation(currentDoorNumber, currentTargetRef.current)
+    }
+  }, [displayPresent, currentDoorNumber])
+
   const handleOnClick = (e, doorClass, door) => {
-    currentTarget = e.currentTarget
+    currentTargetRef.current = e.currentTarget
     const timeline = anime.timeline({ easing: "easeOutExpo" })
     setAnimating(true)
 
@@ -372,7 +377,7 @@ const Calendar = ({ day }) => {
         color: "#fff",
         duration: 1500,
       },
-      "-=1500"
+      "-=1500",
     )
     timeline.add({
       targets: e.currentTarget,
@@ -385,8 +390,8 @@ const Calendar = ({ day }) => {
       color: "#0f6235",
       duration: 1500,
       complete: () => {
+        setCurrentDoorNumber(door)
         setDisplayPresent(door)
-        presentAnimation(door)
       },
     })
   }
@@ -394,16 +399,43 @@ const Calendar = ({ day }) => {
   const onBack = () => {
     const timeline = anime.timeline({ easing: "easeOutExpo" })
     setDisplayCalendar(true)
-    timeline.add({
-      targets: "#present",
-      opacity: 0,
-      duration: 1500,
-      complete: () => {
-        setAnimating(false)
-        setDisplayPresent(false)
-        startAnimation()
-      },
-    })
+
+    // Reset present text and back button animation states to initial values
+    if (presentTextRef.current) {
+      anime.set(presentTextRef.current, {
+        opacity: 0,
+        translateX: 300,
+        translateY: 400,
+      })
+    }
+
+    if (backBtnRef.current) {
+      anime.set(backBtnRef.current, {
+        opacity: 0,
+      })
+    }
+
+    if (presentContainerRef.current) {
+      timeline.add({
+        targets: presentContainerRef.current,
+        opacity: 0,
+        duration: 1500,
+        complete: () => {
+          setAnimating(false)
+          setDisplayPresent(false)
+          setCurrentDoorNumber(null)
+          currentTargetRef.current = null
+          startAnimation()
+        },
+      })
+    } else {
+      // Fallback if refs aren't available
+      setAnimating(false)
+      setDisplayPresent(false)
+      setCurrentDoorNumber(null)
+      currentTargetRef.current = null
+      startAnimation()
+    }
   }
 
   return (
@@ -411,9 +443,7 @@ const Calendar = ({ day }) => {
       {displayTitle && <Title onMount={() => setDisplayTyper(true)} />}
       {displayTyper && (
         <Typer
-          content={[
-            "25 things I can't wait to do with you!",
-          ]}
+          content={["25 things I can't wait to do with you!"]}
           onEnd={startAnimation}
         />
       )}
@@ -447,11 +477,20 @@ const Calendar = ({ day }) => {
         </div>
       )}
       {displayPresent && (
-        <div className={styles.present} id="present">
-          <div className={styles.presentText} id="present-text">
+        <div ref={presentContainerRef} className={styles.present} id="present">
+          <div
+            ref={presentTextRef}
+            className={styles.presentText}
+            id="present-text"
+          >
             {presents[displayPresent].present}
           </div>
-          <button className={styles.backBtn} id="back-btn" onClick={onBack}>
+          <button
+            ref={backBtnRef}
+            className={styles.backBtn}
+            id="back-btn"
+            onClick={onBack}
+          >
             <img alt="back arrow" src={LeftArrow} />
           </button>
         </div>

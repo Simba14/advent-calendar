@@ -7,12 +7,9 @@ const GameOver = () => {
 
   return (
     <div>
-      <Title onMount={() => setDisplayTyper(true)} text="The Game Is Over" />
+      <Title onMount={() => setDisplayTyper(true)} text="Christmas Is Over" />
       {displayTyper && (
-        <Typer
-          content={["Till Next Year", "If you're lucky"]}
-          maintainLastSentence
-        />
+        <Typer content={["Till Next Year", "If you're lucky"]} />
       )}
     </div>
   )

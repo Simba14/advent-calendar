@@ -2,7 +2,7 @@ import React, { useRef } from "react"
 
 import * as styles from "./typer.module.scss"
 
-const Typer = ({ content, onEnd, maintainLastSentence = false }) => {
+const Typer = ({ content, onEnd, deleteText = false }) => {
   const cursorRef = useRef()
   const textRef = useRef()
 
@@ -16,10 +16,11 @@ const Typer = ({ content, onEnd, maintainLastSentence = false }) => {
   let intervalVal
 
   const Type = () => {
-    if (!textRef.current) return
+    if (!textRef.current || !cursorRef.current) return
     // Get substring with 1 characater added
     const text = content[part].substring(0, partIndex + 1)
-    textRef.current.innerHTML = text
+    // Update only the text content, cursor stays as sibling
+    textRef.current.textContent = text
     partIndex++
 
     // If full sentence has been displayed then start to delete the sentence after some time
@@ -29,37 +30,41 @@ const Typer = ({ content, onEnd, maintainLastSentence = false }) => {
 
       clearInterval(intervalVal)
 
-      // only delete if maintainLastSentence is false
-      if (!(maintainLastSentence && part === content.length - 1)) {
-        setTimeout(function () {
-          intervalVal = setInterval(Delete, 50)
-        }, 1000)
-      }
+      setTimeout(function () {
+        intervalVal = setInterval(Delete, 50)
+      }, 1000)
     }
   }
 
   const Delete = () => {
-    // Get substring with 1 characater deleted
-    const text = content[part].substring(0, partIndex - 1)
-
-    textRef.current.innerHTML = text
-    partIndex--
-    if (part === content.length - 1 && text === "") {
+    if (!deleteText) {
       clearInterval(intervalVal)
       onEnd()
-    }
-    // If sentence has been deleted then start to display the next sentence
-    if (text === "" && part !== content.length - 1) {
-      clearInterval(intervalVal)
+    } else {
+      if (!textRef.current || !cursorRef.current) return
+      // Get substring with 1 characater deleted
+      const text = content[part].substring(0, partIndex - 1)
 
-      part++
-      partIndex = 0
+      // Update only the text content, cursor stays as sibling
+      textRef.current.textContent = text
+      partIndex--
+      if (part === content.length - 1 && text === "") {
+        clearInterval(intervalVal)
+        onEnd()
+      }
+      // If sentence has been deleted then start to display the next sentence
+      if (text === "" && part !== content.length - 1) {
+        clearInterval(intervalVal)
 
-      // Start to display the next sentence after some time
-      setTimeout(function () {
-        cursorRef.current.style.display = "inline-block"
-        intervalVal = setInterval(Type, 100)
-      }, 200)
+        part++
+        partIndex = 0
+
+        // Start to display the next sentence after some time
+        setTimeout(function () {
+          cursorRef.current.style.display = "inline-block"
+          intervalVal = setInterval(Type, 100)
+        }, 200)
+      }
     }
   }
 
@@ -67,8 +72,10 @@ const Typer = ({ content, onEnd, maintainLastSentence = false }) => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.text} id={"text"} ref={textRef}></div>
-      <span className={styles.cursor} id={"cursor"} ref={cursorRef}></span>
+      <div className={styles.textWrapper}>
+        <span className={styles.text} id={"text"} ref={textRef}></span>
+        <span className={styles.cursor} id={"cursor"} ref={cursorRef}></span>
+      </div>
     </div>
   )
 }

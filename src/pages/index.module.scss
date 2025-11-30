@@ -87,8 +87,12 @@ body {
   width: 100vw;
   color: white;
   text-align: center;
-  padding: 32px;
+  padding: 16px;
   overflow-x: scroll;
+
+  @media (min-width: 501px) {
+    padding: 32px;
+  }
 }
 
 .gateway {
