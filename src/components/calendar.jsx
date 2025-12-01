@@ -46,7 +46,7 @@ const presents = {
   },
   2: {
     present:
-      "2. Coming up with 1000’s of nicknames for you - All needed to capture the depth of your beautiful sweet & silly personality.",
+      "2. Coming up with 1000’s of nicknames for you - All needed to capture the depth of your beautiful, sweet & silly personality.",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -55,7 +55,7 @@ const presents = {
     },
   },
   3: {
-    present: "",
+    present: "3. You riding me on every piece of furniture possible",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
