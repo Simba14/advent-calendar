@@ -85,7 +85,7 @@ const presents = {
   },
   6: {
     present:
-      "Being at parties or events with you, catching your eye from across the room, and smiling because your the most wonderful person in the room.",
+      "Being at parties or events with you, catching your eye from across the room, and smiling, because whatever room we're in, you'll always be the most wonderful person in it",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -95,7 +95,7 @@ const presents = {
   },
   7: {
     present:
-      "Witnessing your constant creativity and giving you the space and time to for you keep your wonderful imagination and curiosity alive.",
+      "Witnessing your constant creativity and giving you the space and time for you to keep your wonderful imagination and curiosity alive.",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -160,7 +160,8 @@ const presents = {
     },
   },
   14: {
-    present: "",
+    present:
+      "Lære norsk for og med deg. Forhåpentligvis komme til et punkt hvor du kan kommunisere dypt med meg og jeg forstår. Og jeg kan være sammen med dine venner og familie og la dem snakke fritt, være seg selv og delta i diskusjonene og latteren.",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
