@@ -114,7 +114,7 @@ const presents = {
     },
   },
   9: {
-    present: "Meeting your family",
+    present: "Coming inside of you, over and over and over and over again",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -124,7 +124,7 @@ const presents = {
   },
   10: {
     present:
-      "Getting to kiss you as the first thing I do each day, getting to kiss you whilst we cook, getting to kiss you on trains or as we wait for trains, or planes or buses, or the light to go green, or in supermarkets, or on the walk to supermarkets, in museums, in cafes, at parties, getting to kiss youeverywhere and always how I end each day.",
+      "Getting to kiss you as the first thing I do each day, getting to kiss you whilst we cook, getting to kiss you on trains or as we wait for trains, or planes or buses, or the light to go green, or in supermarkets, or on the walk to supermarkets, in museums, in cafes, at parties, getting to kiss you everywhere - and always getting to kiss you goodnight.",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -134,7 +134,7 @@ const presents = {
   },
   11: {
     present:
-      "Getting lost in Italy with you, taking romantic train rides, deepending your love for Tiramisu, doing silly Italian accents",
+      "Getting lost in Italy with you, taking romantic train rides, deepending your love for Tiramisu, doing silly Italian accents, turning into pasta",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -143,7 +143,8 @@ const presents = {
     },
   },
   12: {
-    present: "",
+    present:
+      "Getting a dog together, giving it silly names, training it to become a cheeky sock thief.",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -152,7 +153,7 @@ const presents = {
     },
   },
   13: {
-    present: "",
+    present: "Learning salsa with you (but your salsa face is not invited)",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
@@ -171,7 +172,7 @@ const presents = {
     },
   },
   15: {
-    present: "",
+    present: "Meeting your family",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
