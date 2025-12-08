@@ -104,7 +104,8 @@ const presents = {
     },
   },
   8: {
-    present: "",
+    present:
+      "Cooking for you, cooking beside you, cooking for others, telling you off for stealing things from my chopping board, watching you become a shrimp on the kitchen floor, falling in love with you more each time",
     animation: {
       translateY: ["-25%", "-50%"],
       translateX: ["-50%"],
