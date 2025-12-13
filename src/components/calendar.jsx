@@ -226,7 +226,7 @@ const presents = {
     },
   },
   21: {
-    present: "",
+    present: "Going to concerts",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -253,7 +253,7 @@ const presents = {
     },
   },
   24: {
-    present: "",
+    present: "Trip to London",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
