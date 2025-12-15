@@ -172,7 +172,7 @@ const presents = {
     },
   },
   15: {
-    present: "Meeting your family",
+    present: "Greeting you like an over-excited puppy everytime I see you 🐾",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -181,7 +181,8 @@ const presents = {
     },
   },
   16: {
-    present: "Dog",
+    present:
+      "Making love to you in very public places - on balconies, during train rides, on walks through the forest, in stairwells, on beaches, behind doors that shouldn't be open - taking every opportunity to be inside of you, to be where I belong",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -190,7 +191,8 @@ const presents = {
     },
   },
   17: {
-    present: "Meeting my family",
+    present:
+      "Introducing you to my family, seeing how excited they are to meet you, seeing them realise that we do in fact have a stronger bond than all of them...",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -199,7 +201,8 @@ const presents = {
     },
   },
   18: {
-    present: "",
+    present:
+      "Living in the same city as you, being able to see you every day, call you and ask what you are up to, take you on cute dates, tell you to meet me here, getting to kiss you and hold your hand, feeling safe in the knowledge, I can do it all over again tomorrow",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -208,7 +211,8 @@ const presents = {
     },
   },
   19: {
-    present: "",
+    present:
+      "I want to propose to you every day - I literally have to talk myself out of it five times a day. But one day I will...and it will be crazy romantic and won't be at a random tram stop, I promise...unless you beat me to it",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -217,7 +221,7 @@ const presents = {
     },
   },
   20: {
-    present: "",
+    present: "Your friends becoming my friends, my friends becoming yours",
     animation: {
       translateY: ["-75%", "-50%"],
       translateX: ["-50%"],
@@ -226,7 +230,8 @@ const presents = {
     },
   },
   21: {
-    present: "Going to concerts",
+    present:
+      "Taking you to concerts, dancing and singing along with you, discovering new artists, getting recorded by random people because we are so cute together.",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -235,7 +240,8 @@ const presents = {
     },
   },
   22: {
-    present: "",
+    present:
+      "Having that lil performative chat, that we should probably have less sex and let our bodies recover a little...but then end up fucking you harder and longer than ever before...",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -244,7 +250,8 @@ const presents = {
     },
   },
   23: {
-    present: "",
+    present:
+      "Spending all future Christmases with you, doing cute festive things, watching Elf, decorating our home, waking up next to you like an excited kid.",
     animation: {
       translateY: "-50%",
       translateX: "-50%",
@@ -253,7 +260,8 @@ const presents = {
     },
   },
   24: {
-    present: "Trip to London",
+    present:
+      "My Christmas present to you - tickets to London in March (and lot's of lovely things and dates once we are there) 🇬🇧. To show you my home, to introduce you to the people I love, it's really just a gift for myself...",
     animation: {
       translateY: ["-50%", "-50%"],
       translateX: ["-50%"],
@@ -263,7 +271,7 @@ const presents = {
   },
   25: {
     present:
-      "25 reasons. A tiny sample of a huge, expanding list. You're the most important person in this world to me. Everything I am is you.",
+      "25 things I can't wait to do with you. A tiny sample of a huge, expanding list. My lil shrimp, my lil egg, my soulmate - I want everything with you.",
     animation: {
       translateY: ["-100%", "-50%"],
       translateX: ["-50%", "-50%"],
